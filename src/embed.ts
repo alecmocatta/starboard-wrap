@@ -97,7 +97,7 @@ function loadDefaultSettings(
     sandbox:
       opts.sandbox ??
       el.getAttribute("sandbox") ??
-      "allow-scripts allow-modals allow-same-origin allow-pointer-lock allow-top-navigation-by-user-activation allow-forms allow-downloads",
+      "allow-scripts allow-modals allow-popups allow-same-origin allow-pointer-lock allow-top-navigation-by-user-activation allow-forms allow-downloads",
     allow: opts.allow ?? el.getAttribute("allow") ?? getDefaultAllowAttributeValue(),
     onNotebookReadySignalMessage: opts.onNotebookReadySignalMessage ?? function () {},
     onContentUpdateMessage: opts.onContentUpdateMessage ?? function () {},
